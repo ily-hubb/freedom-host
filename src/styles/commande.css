@@ -1,0 +1,93 @@
+
+.logooo {
+    background: url('dark.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .commande-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus  {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  button {
+    background: linear-gradient(90deg, #8e2de2, #00c6ff);
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    color: white;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 198, 255, 0.5);
+  }
+  
+  .success-message {
+    color: #4caf50;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: bounce 1s ease-in-out;
+  }
+  
+ 
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
